@@ -13,7 +13,7 @@ public class Device
         Brand = brand;
     }
 
-    // Віртуальний метод, який повертає рядок із описом дії (для подальшої агрегації)
+    // Віртуальний метод, який повертає рядок із описом дії
     public virtual string PerformAction()
     {
         return $"Пристрій {Brand} виконує базову дію.";
@@ -92,10 +92,10 @@ class Program
             // Динамічне зв'язування: викликається override метод конкретного похідного типу
             string result = device.PerformAction();
             
-            // Виведення в консоль
+            
             Console.WriteLine(result);
             
-            // Агрегація: збираємо підсумковий список дій
+            // Агрегація: збирає підсумковий список дій
             actionHistory.Add(result);
         }
 
