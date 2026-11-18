@@ -29,8 +29,6 @@ namespace IndependentWork5
 
             string content = Encoding.UTF8.GetString(buffer, 0, bytesRead);
             Console.WriteLine($"Прочитаний вміст ({bytesRead} байт):");
-            Console.WriteLine($""{content}"");
-            Console.WriteLine();
         }
     }
 }
